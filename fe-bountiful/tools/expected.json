@@ -1,0 +1,42 @@
+{
+ "Game": {
+  "runtime_bytes": 2409,
+  "sha256": "a16db58f965172d6201d8dcbd54c8985e6dbbb03b78ca2d35ea80fe96171261b",
+  "matches_compiled_source": true
+ },
+ "Game2D": {
+  "runtime_bytes": 2234,
+  "sha256": "3165bcd65d835b85fb27093bc6619eb995ffb7476ef6306ea7a1fbd86bae8978",
+  "matches_compiled_source": true
+ },
+ "GameEnum": {
+  "runtime_bytes": 2617,
+  "sha256": "d8ecf1ddd23c92efb22544c4750cd7b5c6ea59c8494e2a95dbaf27422039d16a",
+  "matches_compiled_source": true
+ },
+ "GameBitboard": {
+  "runtime_bytes": 2145,
+  "sha256": "499680ec7d0f65791aeb059a33734f4d05ac183c8af5024ae7d763e7c48e78a9",
+  "matches_compiled_source": true
+ },
+ "GameMonadic": {
+  "runtime_bytes": 4389,
+  "sha256": "1d9c496192fd0115bbacd99f71f7c1b793f3b5207080e39ea42c77ca142ee7c0",
+  "matches_compiled_source": true
+ },
+ "GameNested": {
+  "runtime_bytes": 3535,
+  "sha256": "902a6eb6c9941f0b00866a4ed1b14360bd4ee153a85adf1332128bb563f0171c",
+  "matches_compiled_source": true
+ },
+ "GameTrait": {
+  "runtime_bytes": 3148,
+  "sha256": "2f74bc6a3fa05431ad875fb10c1d4a02c8fc239afe84a05f9e7d2c10f0141abb",
+  "matches_compiled_source": true
+ },
+ "BountyRegistry": {
+  "runtime_bytes": 5909,
+  "sha256": "1eaf66e05f5662605bfc5a6945e719cdf873f709277f91e01b2978647ddad543",
+  "matches_compiled_source": true
+ }
+}

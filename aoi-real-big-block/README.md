@@ -55,16 +55,15 @@ README does not have, and the new families I tested. Every one of them was negat
    pointed out "FIrst", "SInce" and "BItcoin" in 2019; she also wrote "DIscussion", and "don;t"
    is a US-layout neighbour-key slip. This prompted the Shift-accident families below.
 
-## Tested here (0 match so far; two runs unfinished, marked below)
+## Tested here (all 0 match)
 
-Real Big Block. Both the current and the superseded escrow were targets (the second row is written
-but not yet run), at indices 0 to 5,
+Real Big Block. Both the current and the superseded escrow were targets, at indices 0 to 5,
 compressed and uncompressed. Each run planted a synthetic witness and recovered it.
 
 | Family | Unique texts | Script |
 |---|---|---|
 | Planted groups G1/G3/G2 plus the Finney quote, each off, on, or on plus its adjacent "I" paragraph (the I in "I STNM"); 3 flip modes, `\n\n`/`\r\n\r\n`, trailing newline or not, NBSP kept or turned to space, headings kept, title dropped, or all headings dropped | 7,704 | `experiments/rbb_i_paragraph.py` |
-| Group flips plus a Shift-held accident on the character after any subset of the newly capitalised last letters (`.`→`>` on US, `.`→`:` on German), every non-empty subset of the 4 units, 4 join/tail variants | not run yet (≈668k before de-duplication, ≈10 min here) | `experiments/rbb_shift_habit.py` |
+| Group flips plus a Shift-held accident on the character after any subset of the newly capitalised last letters (`.`→`>` on US, `.`→`:` on German), every non-empty subset of the 4 units, 4 join/tail variants | 668,040 (ran 2026-10-19, witness recovered) | `experiments/rbb_shift_habit.py` |
 
 Grycoin Block 2. Escrow `1tzieUfb…`. Every candidate went through the free `3c6` prefix filter
 first. The certified oracle reproduces Grycoin Block 1 and Stage One.
@@ -75,13 +74,13 @@ first. The certified oracle reproduces Grycoin Block 1 and Stage One.
 | Toggles of the first letter of any paragraph combined with toggles of up to one sentence-final letter per paragraph, with and without that sentence | ≈ 23.6M | 0 |
 | 5 rule readings (non-ITASM, ITASM, paragraphs containing "recognize the signs", I-only, none) plus any 1 or 2 more case toggles anywhere | 7.2M | 0 |
 | 7 rule readings plus any single insert, delete or replace (printable ASCII or `\n`) anywhere | ≈ 3.5M | 0 |
-| Each paragraph unchanged, flipped, flipped with Shift-held punctuation (US or German), last letter only, first letter only, or flipped with the 2nd letter capitalised | 144,120,025 × 2 joins | MD5 filter done (70,392 survivors); address check still running at commit time |
+| Each paragraph unchanged, flipped, flipped with Shift-held punctuation (US or German), last letter only, first letter only, or flipped with the 2nd letter capitalised | 144,120,025 × 2 joins | 70,392 passed the 3c6 filter, 0 address match (uncertified: no planted witness in this run) |
 | Every per-paragraph flip subset × 7 joins × 5 leads × 6 tails × UTF-8/UTF-16 | 5.2M | 0 |
 | Quote handling: `\"`, `&quot;`, `&#039;`, smart quotes, quotes removed (Stage One contains `"Trusted Computing"` with plain quotes and still reproduces, so this was a long shot) | 122,880 | 0 |
 | The plain rule-applied texts under 12 derivation paths (BIP44/49/84, BIP32 `m/0`, Core, Multibit…), indices 0 to 29, hardened and normal, passphrases `""`/`TOMI`, plus brainwallet readings | 32 texts | 0 |
 
-Not finished: rule readings plus **two** arbitrary edits near the flipped letters (stopped
-because it would not complete within the 30-minute run limit).
+Not finished: rule readings plus **two** arbitrary edits near the flipped letters on Grycoin
+Block 2 (stopped at the run limit; the single-edit and structured variants above are complete).
 
 ## What I would do next
 
