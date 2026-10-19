@@ -119,6 +119,14 @@ address:
   ("bit-plane" readings).
 * SHA-256 of the sample, frame and nibble strings, and of the image file.
 * EC "halving" of each candidate: multiplied by 2^±j mod n for j ≤ 8, plain shifts, and n − x.
+* Era 1 read as raw digits plus frames f8–f55, with the five anomalous era-2 nibbles free
+  (16⁵ values each; 33.5 M keys).
+* Dense frames read as a nibble taken from any two of their four positions, under any level
+  relabelling, combined with the clean nibbles (3.5 M keys).
+* Dense frames as text: bytes with the clean nibble low and the extra bits (a₀, b₀, d) high,
+  mixed-radix (3·4·4·3) ASCII, and Base58 / WIF prefixes. None gives readable output.
+* Additive noise models: periodic saw or triangle "noise", local smoothing or echo filters,
+  and the stream summed with a shifted copy of itself. None explains the dense eras.
 
 ## Side discovery: a second funded address
 
