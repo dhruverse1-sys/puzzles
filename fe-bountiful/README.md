@@ -53,7 +53,7 @@ succeeds, and a non-adjacent move reverts.
 |---|---|---|
 | Complete depth-7 enumeration | every one of the 414 distinct boards reachable within 7 moves, replayed on all 7 games, full board compared | 0 divergence, none solved |
 | Game2D two-argument sweep | `moveField(row,col)` for row,col over 0..19 plus dirty 64/128/256-bit values; reference rejects any row>3 or col>3 | 0 divergence, none solved |
-| Lockstep random walk | 8 seeds x 120,000 steps (960,000 total) planned, neighbour-biased with periodic fully-random/illegal indices, full board compared every 20 steps | in progress at commit time; 0 divergence / none solved through the seeds completed so far |
+| Lockstep random walk | 8 seeds x 120,000 steps (960,000 total), neighbour-biased with periodic fully-random/illegal indices, full board compared every 20 steps | 0 divergence, none solved (completed in 441s) |
 
 This complements, with an independent implementation and much higher step counts, the two
 Solidity suites already in the repo (the maintainers' `ExploitSearch`: deep walks, dirty-high-bit
