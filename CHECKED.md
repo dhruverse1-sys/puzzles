@@ -38,6 +38,11 @@ don't redo work. Escrow states are as of the date shown; re-check on-chain befor
 | KwikbitL "swipe my sats" | 2 of its 3 "ways to win" are hacking an email/drive (declined); the seed part has no published address |
 | dlay_on 10M sats | 8 of 12 seed words missing (~2^88) |
 | SimplestBTCBook 369k sats | already solved (Keysa, swept 2026-09-08) |
+| Genesis Block Wallet Puzzle (block 963,629) | solved and swept 2026-10-17 |
+| LuckyLurker Bitcoin Vault #2 (1 BTC, `bc1qnepv9pcnqvndux9h9mcaxvk6u993rc0lew9fpp`) | funded and unspent 2026-10-20, but the page says "Postponed until further notice" (sponsor issue); none of the 12 riddles published. Re-check https://luckylurker.com/bitcoin-vault-2/ |
+| kTimesG "phy" (0.008 BTC, bitcointalk topic 5584952) | open since 2026-06-05; 19 author hints, solvers stuck 4 months; possible reasoning target, not attempted |
+| The Great Riddle (0.0042 BTC) | words are hidden only in the physical original drawings |
+| bitaddress BIP38 "brute force and the coins are yours" (0.0053 BTC) | forgotten ~30-char passphrase, scrypt N=16384 p=8: infeasible |
 
 ## Upcoming (fresh, not yet open)
 
