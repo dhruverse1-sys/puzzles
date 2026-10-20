@@ -44,6 +44,13 @@ don't redo work. Escrow states are as of the date shown; re-check on-chain befor
 | The Great Riddle (0.0042 BTC) | words are hidden only in the physical original drawings |
 | bitaddress BIP38 "brute force and the coins are yours" (0.0053 BTC) | forgotten ~30-char passphrase, scrypt N=16384 p=8: infeasible |
 
+## Non-Bitcoin, live
+
+| Puzzle | Prize | Status / notes |
+|---|---|---|
+| Solana Puzzles #4 (solanapuzzles.com/puzzle4.html), wallet `DmDBmb7AEm6xRxkoBYq1mJYqsZP263gmXB53zA2dqjne` | 0.834 SOL | funded 2025-09-02, unspent 2026-10-20 (~412 days open). Collage image `images/puzzle4.png` + 12 hints; 12 BIP39 words, imported in Phantom (Solana default path). Decoded so far: QR -> YouTube "Numbers Station - Persephone 2 3" (QhXQo-h0lwc, audio not reachable here); binary block = "Trap" (decoy); "uryyb jbeyq" = ROT13 "hello world"; "qva lbh sbyybj gur yvax?" = ROT13 "did you follow the link?"; mirrored "Not your keys, not your coins"; left-edge number = 2^128+51 (smallest prime > 2^128); "5HueCGU8rMjxEXxiPuD5..." = Bitcoin-wiki example WIF (decoy). Past puzzles #1-#3 and their solutions are public on the site for style reference |
+| Arweave #3, #10, #11; Teikhos; Guntis (ETH) | see above | already triaged; no new angle |
+
 ## Upcoming (fresh, not yet open)
 
 | Puzzle | Prize | Opens | Notes |
